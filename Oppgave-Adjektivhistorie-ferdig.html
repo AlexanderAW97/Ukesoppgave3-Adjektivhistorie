@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color:rgb(106, 106, 106) ;
+                }
+
+        #story {
+            margin: 20px;
+            color: beige;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #HISTORIEN{
+            font-family: fantasy;
+            font-size: 500%;
+            color: white;
+        }
+
+        #startButton{
+            border-radius: 0%;
+            border-color: blue;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="HISTORIEN">HISTORIEN</div>
+
+    <Div>
+        <button id="startButton" onclick="runAdjectivequery()">Sett inn Valgte adjektiv ved å trykke på denne knappen</button>
+    </Div>
+
+    <div id="story">
+        Once upon a time, there was a <div class="option" id="adjective1"></div> girl who lived in a <span class="option" id="adjective2"></span>
+        castle. One day, she decided to go on an adventure to find the <span class="option" id="adjective3"></span> treasure that was
+        said to be hidden in the <span class="option" id="adjective4"></span> forest. On her journey, she met a <span
+        class="option" id="adjective5"></span> dragon who helped her navigate through the <span class="option" id="adjective6"></span> terrain.
+        Together, they encountered many <span class="option" id="adjective7"></span> obstacles, but ultimately reached the <span
+        class="option" id="adjective8"></span> treasure. The girl was overjoyed and thanked the <span class="option" id="adjective9"></span>
+        dragon for his assistance. <br><br><br> Takk for meg, ha en <span class="option" id="adjective10"></span> dag videre!
+    </div>
+    
+    
+    
+    <script>
+        
+        let adjective1 = prompt("Skriv et adjektiv: (1/10) ");
+        let adjective2 = prompt("Skriv et adjektiv: (2/10)");
+        let adjective3 = prompt("Skriv et adjektiv: (3/10)");
+        let adjective4 = prompt("Skriv et adjektiv: (4/10)");
+        let adjective5 = prompt("Skriv et adjektiv: (5/10)");
+        let adjective6 = prompt("Skriv et adjektiv: (6/10)");
+        let adjective7 = prompt("Skriv et adjektiv: (7/10)");
+        let adjective8 = prompt("Skriv et adjektiv: (8/10)");
+        let adjective9 = prompt("Skriv et adjektiv: (9/10)");
+        let adjective10 = prompt("Skriv et adjektiv: (10/10)");
+
+        
+        
+      //  function runAdjectivequery() {
+            document.getElementById('adjective1').innerHTML = adjective1;
+            document.getElementById("adjective2").innerHTML = adjective2;
+            document.getElementById("adjective3").innerHTML = adjective3;
+            document.getElementById("adjective4").innerHTML = adjective4;
+            document.getElementById("adjective5").innerHTML = adjective5;
+            document.getElementById("adjective6").innerHTML = adjective6;
+            document.getElementById("adjective7").innerHTML = adjective7;
+            document.getElementById("adjective8").innerHTML = adjective8;
+            document.getElementById("adjective9").innerHTML = adjective9;
+            document.getElementById("adjective10").innerHTML = adjective10;
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
